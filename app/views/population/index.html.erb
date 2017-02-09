@@ -1,0 +1,36 @@
+<script type="text/javascript">
+	$(function () {
+		$('#container').highcharts({
+			chart: {
+				type: 'line'
+			},
+			title: {
+				text: 'Population by Cities'
+			},
+			subtitle: {
+				text: ''
+			},
+			xAxis: {
+				categories: ['Moscow<br/>Russian','New York<br/>English','London<br/>English','Tokyo<br/>Japanese', 'Shanghai<br/>Chinese', 'Seoul<br/>Korean', 'Ciudad de México<br/>Spanish','São Paulo<br/>Portuguese', 'Jakarta<br/>Malay', 'Karachi<br/>Urdu', 'Istanbul<br/>Turkish', 'Peking<br/>Chinese','Delhi<br/>Hindi','Mumbai (Bombay)<br/>Hindi','Cairo<br/>Arabic','Roma<br/>Italian','Melbourne<br/>English','Berlin<br/>German']
+			},
+			yAxis: {
+				title: {
+					text: 'Population'
+				}
+			},
+			plotOptions: {
+				line: {
+					dataLabels: {
+						enabled: true
+					},
+					enableMouseTracking: false
+				}
+			},
+			series: [{
+				name: 'Population Graph',		
+				data: [8389200,8008278,7285000,7980230, 9696300,9981619,8591309,  9968485, 9604900, 9269265,8787958,  7472000, 7206704,10500000,6789479,2643581,2865329,3386667]
+			}]
+		});
+	});
+</script>
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
